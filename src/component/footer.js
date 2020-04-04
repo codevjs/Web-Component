@@ -1,9 +1,10 @@
+// import '../style/footer.css';
+
 class Footer extends HTMLElement {
 
     constructor() {
         super();
 
-        this._shadowDOM = this.attachShadow({mode : "open"});
     }
 
     connectedCallback(){
@@ -12,10 +13,7 @@ class Footer extends HTMLElement {
     }
 
     render(){
-        this._shadowDOM.innerHTML = `
-                <!--    style     -->
-                <link rel="stylesheet" type="text/css" href="src/style/footer.css" />
-                
+        this.innerHTML = `
                 <footer>
                      <div class="footer-text">
                         <div class="container">

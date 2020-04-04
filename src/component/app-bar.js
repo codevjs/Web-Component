@@ -2,8 +2,6 @@ class AppBar extends HTMLElement {
 
     constructor() {
         super();
-
-        this._shadowDOM = this.attachShadow({mode : "open"});
     }
 
     connectedCallback(){
@@ -12,10 +10,7 @@ class AppBar extends HTMLElement {
     }
 
     render(){
-        this._shadowDOM.innerHTML = `
-                <!--    style     -->
-                <link rel="stylesheet" type="text/css" href="src/style/app-bar.css" />
-               
+        this.innerHTML = `
                 <nav>
                     <section class="container">
                         <img 

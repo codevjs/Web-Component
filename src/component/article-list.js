@@ -1,9 +1,8 @@
- class ArticleList extends HTMLElement {
+class ArticleList extends HTMLElement {
 
     constructor() {
         super();
 
-        this._shadowDOM = this.attachShadow({mode : "open"});
         this._articles = []
     }
 
@@ -26,26 +25,23 @@
     render() {
 
         const element = this._articles.map(item => (`
-            <!--    style     -->
-            <link rel="stylesheet" type="text/css" href="src/style/article.css" />
-            
             <article>
                 <div class="article-image">
                     <img 
-                         src="${item.image}"
+                         src="${item.thumbnailUrl}"
                          alt="${item.title}"
                     />
                 </div>
                 <div class="article-content">
                     <h4>${item.title}</h4>
                     <p>
-                       ${item.description}
+                       ${item.description || ""}
                     </p>
                 </div>
             </article>
         `));
 
-        this._shadowDOM.innerHTML = element.join('<br/>')
+        this.innerHTML = element.join('<br/>')
     }
 }
 

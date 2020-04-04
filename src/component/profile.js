@@ -1,8 +1,8 @@
+// import '../style/profile.css'
+
 class Profile extends HTMLElement{
     constructor() {
         super();
-
-        this._shadowDOM = this.attachShadow({mode : "open"});
     }
 
     connectedCallback(){
@@ -12,10 +12,7 @@ class Profile extends HTMLElement{
 
     render(){
 
-        this._shadowDOM.innerHTML = `
-            <!--    style     -->
-            <link rel="stylesheet" type="text/css" href="src/style/profile.css" />
-            
+        this.innerHTML = `
             <aside>
                 <div style="text-align: center">
                     <img class="avatar"
