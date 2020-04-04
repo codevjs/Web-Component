@@ -1,0 +1,1 @@
+**Pastikan komputer anda onlie;**

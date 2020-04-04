@@ -1,0 +1,9 @@
+{
+  "name": "dicoding-frontend-developer",
+  "version": "1.0.0",
+  "description": "Web Development Training",
+  "main": "index.js",
+  "repository": "https://github.com/codevjs/web-component.git",
+  "author": "Renaldi Pranata",
+  "license": "MIT"
+}
