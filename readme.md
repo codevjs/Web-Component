@@ -1,4 +1,4 @@
-# Contoh project Web Compomnent Vanila Javascript
+# Contoh project Web Component Vanila Javascript
 
 **cara jalankan**
 - npm run start-dev atau yarn start-dev
