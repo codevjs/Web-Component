@@ -1,12 +1,17 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-      entry : {
-          app : './src/app.js'
-      },
-    output : {
+    entry: {
+        app: './src/app.js'
+    },
+    output: {
         filename: '[name].js',
         path: __dirname + '/dist'
+    },
+    optimization: {
+        splitChunks: {
+            chunks: 'all',
+        }
     },
     module: {
         rules: [
@@ -44,5 +49,5 @@ module.exports = {
             filename: "index.html"
         })
     ],
-    mode : "production"
+    mode: "production"
 };
